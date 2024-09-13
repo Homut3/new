@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервисный центр по ремонту бытовой техники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Навигационное меню -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#certificates">Сертификаты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#form">Заявка</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Приветствие (Hero-секция) -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Ремонт бытовой техники с гарантией</h1>
+            <p>Мы помогаем вам с ремонтом бытовой техники уже более 10 лет! Надежный сервис и профессиональный подход к
+                каждому клиенту.</p>
+            <a href="#contact" class="cta-button">Связаться с нами</a>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Наш сервисный центр работает на рынке уже 15 лет. Мы специализируемся на ремонте всей бытовой техники — от
+            холодильников до стиральных машин. За это время мы помогли более 10 000 довольных клиентов.</p>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>Ремонт холодильников</h3>
+                <p>Быстрый и качественный ремонт холодильников всех марок и моделей.</p>
+            </div>
+            <div class="service">
+                <h3>Ремонт стиральных машин</h3>
+                <p>Мы устраняем любые поломки стиральных машин с гарантией качества.</p>
+            </div>
+            <div class="service">
+                <h3>Ремонт посудомоечных машин</h3>
+                <p>Профессиональный ремонт посудомоечных машин в кратчайшие сроки.</p>
+            </div>
+            <div class="service">
+                <h3>Ремонт кондиционеров</h3>
+                <p>Качественный ремонт кондиционеров и их обслуживание.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сертификаты -->
+    <section id="certificates">
+        <h2>Наши сертификаты</h2>
+        <div class="certificates-gallery">
+            <img src="certificate1.jpg" alt="Сертификат 1">
+            <img src="certificate2.jpg" alt="Сертификат 2">
+            <img src="certificate3.jpg" alt="Сертификат 3">
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="review">
+            <p>"Спасибо за быструю и качественную работу! Мастер приехал вовремя и починил холодильник за 30 минут."</p>
+            <span>- Анна П.</span>
+        </div>
+        <div class="review">
+            <p>"Починили стиральную машину быстро и профессионально, рекомендую всем."</p>
+            <span>- Игорь С.</span>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <h2>Наши контакты</h2>
+        <p>Телефон: +7 (495) 123-45-67</p>
+        <p>Email: info@remontcentr.ru</p>
+        <p>Адрес: г. Москва, ул. Ленина, д. 10</p>
+
+        <!-- Карта -->
+        <div id="map"></div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section id="form">
+        <h2>Оставьте заявку</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <textarea name="message" placeholder="Опишите проблему" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+</body>
+
+</html>
